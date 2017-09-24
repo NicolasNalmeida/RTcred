@@ -28,6 +28,28 @@ $('.slick-parceiros').slick({
 		        slidesToShow: 3,
 		        arrows: false
 		      }
+		},
+		{
+			 breakpoint: 610,
+			 settings: {
+		        slidesToShow: 2,
+		        arrows: false
+		      }
+		},
+		{
+			 breakpoint: 420,
+			 settings: {
+		        slidesToShow: 1,
+		        arrows: false
+		      }
 		}
 	]
+});
+
+var $doc = $('html, body');
+$('.link-menu').click(function() {
+	$doc.animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+	}, 600);
+	return false;
 });

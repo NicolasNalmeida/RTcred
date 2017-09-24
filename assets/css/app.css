@@ -9693,6 +9693,12 @@ a:hover {
   padding-bottom: 50px;
 }
 
+/* line 32, ../scss/config/_config.scss */
+.row {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 /* line 3, ../scss/banner/_banner.scss */
 .banner img {
   width: 100%;
@@ -9708,39 +9714,42 @@ a:hover {
   margin-top: 100px;
   cursor: pointer;
 }
-/* line 19, ../scss/banner/_banner.scss */
+@media (max-width: 850px) {
+  /* line 13, ../scss/banner/_banner.scss */
+  .header .btn-menu {
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 12px 10px 10px 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+}
+/* line 27, ../scss/banner/_banner.scss */
 .header .btn-menu .span-menu {
   display: block;
-  width: 35px;
+  width: 30px;
   height: 4px;
   background-color: #fff;
   margin-bottom: 5px;
 }
-@media (max-width: 850px) {
-  /* line 19, ../scss/banner/_banner.scss */
-  .header .btn-menu .span-menu {
-    background-color: #ffb600;
-  }
-}
-/* line 34, ../scss/banner/_banner.scss */
+/* line 37, ../scss/banner/_banner.scss */
 .header .display-content {
   display: none;
 }
-/* line 39, ../scss/banner/_banner.scss */
+/* line 42, ../scss/banner/_banner.scss */
 .header .btn-close {
   color: #fff;
   margin-top: 30px;
   font-size: 18px;
   cursor: pointer;
 }
-/* line 47, ../scss/banner/_banner.scss */
+/* line 50, ../scss/banner/_banner.scss */
 .header .logo {
   text-align: center;
   color: #fff;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-/* line 55, ../scss/banner/_banner.scss */
+/* line 58, ../scss/banner/_banner.scss */
 .header .menu {
   position: fixed;
   background-color: #232323;
@@ -9750,30 +9759,30 @@ a:hover {
   z-index: 5;
 }
 @media (max-width: 850px) {
-  /* line 55, ../scss/banner/_banner.scss */
+  /* line 58, ../scss/banner/_banner.scss */
   .header .menu {
     background-color: transparent;
   }
 }
-/* line 70, ../scss/banner/_banner.scss */
+/* line 73, ../scss/banner/_banner.scss */
 .header .color-menu {
   background-color: #232323;
 }
-/* line 75, ../scss/banner/_banner.scss */
+/* line 78, ../scss/banner/_banner.scss */
 .header .list-menu {
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
-/* line 81, ../scss/banner/_banner.scss */
+/* line 84, ../scss/banner/_banner.scss */
 .header .list-menu .content-list {
   border-bottom: 1px solid #fff;
 }
-/* line 85, ../scss/banner/_banner.scss */
+/* line 88, ../scss/banner/_banner.scss */
 .header .list-menu .content-list:last-child {
   border-bottom: none;
 }
-/* line 92, ../scss/banner/_banner.scss */
+/* line 95, ../scss/banner/_banner.scss */
 .header .link-menu {
   color: #fff;
   font-size: 18px;
@@ -9786,7 +9795,14 @@ a:hover {
 .conheca {
   background-color: #333;
 }
-/* line 5, ../scss/coneca/_conheca.scss */
+@media (max-width: 767px) {
+  /* line 1, ../scss/coneca/_conheca.scss */
+  .conheca {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+/* line 11, ../scss/coneca/_conheca.scss */
 .conheca .content {
   color: #fff;
 }
@@ -9799,4 +9815,93 @@ a:hover {
 /* line 8, ../scss/parceiros/_parceiros.scss */
 .slick-content img {
   margin: 0 auto;
+}
+
+/* line 1, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo {
+  background-color: #333;
+}
+/* line 5, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo .text-empre {
+  color: #fff;
+}
+/* line 10, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo .btn-enviar {
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid #fff;
+  transition: .3s;
+}
+/* line 19, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo .btn-enviar:hover {
+  background-color: #fff;
+  color: #333;
+}
+/* line 26, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo .form-control {
+  margin-top: 20px;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  resize: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+/* line 39, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo .form-control::placeholder {
+  color: #fff;
+}
+/* line 45, ../scss/emprestimo/_emprestimo.scss */
+.form-emprestimo .select-opc {
+  color: #000;
+}
+
+/* line 1, ../scss/footer/_footer.scss */
+.info-1 {
+  float: left;
+}
+/* line 4, ../scss/footer/_footer.scss */
+.info-1 p {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (max-width: 620px) {
+  /* line 1, ../scss/footer/_footer.scss */
+  .info-1 {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* line 17, ../scss/footer/_footer.scss */
+.info-2 {
+  float: right;
+}
+/* line 20, ../scss/footer/_footer.scss */
+.info-2 p {
+  font-size: 18px;
+  font-weight: bold;
+}
+@media (max-width: 620px) {
+  /* line 17, ../scss/footer/_footer.scss */
+  .info-2 {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* line 33, ../scss/footer/_footer.scss */
+.icon-social {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+/* line 38, ../scss/footer/_footer.scss */
+.icon-social:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/app.css">
 </head>
 <body>
-	<header class="header">
+	<header class="header" id="home">
 		<div class="menu">
 			<div class="btn-menu">
 				<span class="span-menu"></span>
@@ -18,11 +18,11 @@
 			<div class="btn-close display-content">X</div>
 			<h1 class="logo display-content"><strong>RT</strong>cred</h1>
 			<div class="list-menu display-content">
-				<div class="content-list"><a href="javascript:void(0)" class="link-menu">home</a></div>
-				<div class="content-list"><a href="javascript:void(0)" class="link-menu">conheça a RTcred</a></div>
-				<div class="content-list"><a href="javascript:void(0)" class="link-menu">emprestimo consignado</a></div>
-				<div class="content-list"><a href="javascript:void(0)" class="link-menu">parceiros</a></div>
-				<div class="content-list"><a href="javascript:void(0)" class="link-menu">faça uma simulação</a></div>
+				<div class="content-list"><a href="#home" class="link-menu">home</a></div>
+				<div class="content-list"><a href="#conheca" class="link-menu">conheça a RTcred</a></div>
+				<div class="content-list"><a href="#emprestimo" class="link-menu">emprestimo consignado</a></div>
+				<div class="content-list"><a href="#parceiros" class="link-menu">parceiros</a></div>
+				<div class="content-list"><a href="#simulacao" class="link-menu">faça uma simulação</a></div>
 			</div>
 		</div>
 		<div class="slick-banner">
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="container section">
+	<section class="container section" id="conheca">
 		<div class="row">
 			<div class="col-sm-offset-1 content">
 				<h1>Conheça a <span class="strong-title">RTcred</span></h1>
@@ -43,7 +43,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="section conheca">
+	<section class="section conheca"i id="emprestimo">
 		<div class="content container">
 			<div class="row">
 				<div class="col-sm-offset-1">
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="parceiros container section">
+	<section class="parceiros container section" id="parceiros">
 		<div class="row">
 			<div class="content col-sm-offset-1">
 				<h1>Bancos <span class="strong-title">Parceiros</span></h1>
@@ -78,6 +78,81 @@
 			</div>
 		</div>
 	</section>
+	<section class="section form-emprestimo" id="simulacao">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-1">
+					<h1 class="text-empre">Precisando de <span class="strong-title">Empréstimo</span></h1>
+					<h3 class="text-empre">Realize <span class="strong-title">AGORA</span> uma simulação de empréstimo</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-offset-1">
+					<form>
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<select class="form-control" name="beneficio*">
+									<option class="select-opc" disable selected>Tipo de benefício</option>
+									<option class="select-opc">benefício 1</option>
+									<option class="select-opc">benefício 2</option>
+									<option class="select-opc">benefício 3</option>
+									<option class="select-opc">benefício 4</option>
+									<option class="select-opc">benefício 5</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-6">
+								<input type="text" name="nome" placeholder="Nome do contato*" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<input type="text" name="email" placeholder="E-mail*" class="form-control">
+							</div>
+							<div class="form-group col-sm-6">
+								<input type="text" name="telefone" placeholder="Telefone*" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-6">
+								<input type="text" name="email" placeholder="Celular" class="form-control">
+							</div>
+							<div class="form-group col-sm-6">
+								<input type="text" name="telefone" placeholder="Valor do empréstimo*" class="form-control">
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-sm-12">
+								<textarea class="form-control" rows="6" placeholder="Mensagem*"></textarea>
+							</div>
+						</div>
+					</form>
+					<div class="row">
+						<div class="col-sm-6">
+							<input type="submit" class="btn-enviar" name="enviar" value="Enviar Proposta">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="container footer section">
+		<div class="row">
+			<div class="col-sm-offset-1">
+				<div class="info-2">
+					<p>Endereço: Rua General Jardim 606</p>
+					<p>CEP: 01223-010</p>
+				</div>
+				<div class="info-1">
+					<p>tel.: 4567-3211</p>
+					<p>e-mail: rtcred@contato.com.br</p>
+					<div class="rede-social">
+						<a href="#"><img class="icon-social" src="assets/img/facebook.png"></a>
+						<a href="#"><img class="icon-social" src="assets/img/twitter.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="assets/js/jquery-3.2.1.min.js"></script>
 	<script src="assets/js/slick.js"></script>
 	<script src="assets/js/main.js"></script>

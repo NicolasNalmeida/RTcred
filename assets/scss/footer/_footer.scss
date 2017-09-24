@@ -1,0 +1,43 @@
+.info-1
+{
+	float: left;
+	p
+	{
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	@media(max-width: 620px)
+	{
+		float: none;
+		text-align: center;
+	}
+}
+
+.info-2
+{
+	float: right;
+	p
+	{
+		font-size: 18px;
+		font-weight: bold;
+	}
+
+	@media(max-width: 620px)
+	{
+		float: none;
+		text-align: center;
+	}
+}
+
+.icon-social
+{
+	-webkit-transition: -webkit-transform .5s ease-in-out;
+	transition: transform .5s ease-in-out;
+
+	&:hover
+	{
+	    -webkit-transform: rotateY(360deg);
+	    transform: rotateY(360deg);
+	}
+}

@@ -1,0 +1,49 @@
+.form-emprestimo
+{
+	background-color: #333;
+
+	.text-empre
+	{
+		color: #fff;
+	}
+
+	.btn-enviar
+	{
+		background-color: transparent;
+		color: #fff;
+		font-size: 18px;
+		padding: 10px;
+		border: 1px solid #fff;
+		transition: .3s;
+
+		&:hover
+		{
+			background-color: #fff;
+			color: #333;
+		}
+	}
+
+	.form-control
+	{
+		margin-top: 20px;
+		background-color: transparent;
+		border: 0;
+		box-shadow: none;
+		resize: none;
+		font-size: 16px;
+		font-weight: bold;
+		border-radius: 0;
+		border-bottom: 1px solid #fff;
+		color: #fff;
+
+		&::placeholder
+		{
+			color: #fff;
+		}
+	}
+
+	.select-opc
+	{
+		color: #000;
+	}
+}
