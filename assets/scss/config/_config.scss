@@ -1,0 +1,30 @@
+img
+{
+	max-width: 100%;
+}
+
+a
+{
+	text-decoration: none;
+
+	&:hover
+	{
+		text-decoration: none;
+	}
+}
+
+.text-content
+{
+	font-size: 16px;
+}
+
+.strong-title
+{
+	font-weight: bold;
+}
+
+.section
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
