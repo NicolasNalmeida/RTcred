@@ -9,26 +9,34 @@
 </head>
 <body>
 	<header class="header" id="home">
-		<div class="menu">
-			<div class="btn-menu">
-				<span class="span-menu"></span>
-				<span class="span-menu"></span>
-				<span class="span-menu"></span>
-			</div>
-			<div class="btn-close display-content">X</div>
-			<h1 class="logo display-content"><strong>RT</strong>cred</h1>
-			<div class="list-menu display-content">
-				<div class="content-list"><a href="#home" class="link-menu">home</a></div>
-				<div class="content-list"><a href="#conheca" class="link-menu">conheça a RTcred</a></div>
-				<div class="content-list"><a href="#emprestimo" class="link-menu">emprestimo consignado</a></div>
-				<div class="content-list"><a href="#parceiros" class="link-menu">parceiros</a></div>
-				<div class="content-list"><a href="#simulacao" class="link-menu">faça uma simulação</a></div>
-			</div>
-		</div>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">RTcred</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="content-list"><a href="#home" class="link-menu">home</a></li>
+						<li class="content-list"><a href="#conheca" class="link-menu">conheça a RTcred</a></li>
+						<li class="content-list"><a href="#emprestimo" class="link-menu">emprestimo consignado</a></li>
+						<li class="content-list"><a href="#parceiros" class="link-menu">parceiros</a></li>
+						<li class="content-list"><a href="#simulacao" class="link-menu">simulação</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
 		<div class="slick-banner">
 			<div class="banner-content">
 				<picture class="banner">
-					<!-- <source srcset="" media="(max-width: 600px)"> -->
 					<img src="assets/img/banner-1.jpg">
 				</picture>
 			</div>
@@ -154,6 +162,7 @@
 		</div>
 	</footer>
 	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="assets/js/slick.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>

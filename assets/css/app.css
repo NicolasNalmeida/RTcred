@@ -9709,86 +9709,78 @@ a:hover {
   position: relative;
 }
 /* line 13, ../scss/banner/_banner.scss */
-.header .btn-menu {
-  text-align: center;
-  margin-top: 100px;
-  cursor: pointer;
-}
-@media (max-width: 850px) {
-  /* line 13, ../scss/banner/_banner.scss */
-  .header .btn-menu {
-    background-color: rgba(51, 51, 51, 0.8);
-    padding: 12px 10px 10px 10px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-  }
-}
-/* line 27, ../scss/banner/_banner.scss */
-.header .btn-menu .span-menu {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background-color: #fff;
-  margin-bottom: 5px;
-}
-/* line 37, ../scss/banner/_banner.scss */
-.header .display-content {
-  display: none;
-}
-/* line 42, ../scss/banner/_banner.scss */
-.header .btn-close {
-  color: #fff;
-  margin-top: 30px;
-  font-size: 18px;
-  cursor: pointer;
-}
-/* line 50, ../scss/banner/_banner.scss */
-.header .logo {
-  text-align: center;
-  color: #fff;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-/* line 58, ../scss/banner/_banner.scss */
-.header .menu {
-  position: fixed;
-  background-color: #232323;
-  height: 100vh;
-  padding-right: 30px;
-  padding-left: 30px;
-  z-index: 5;
-}
-@media (max-width: 850px) {
-  /* line 58, ../scss/banner/_banner.scss */
-  .header .menu {
-    background-color: transparent;
-  }
-}
-/* line 73, ../scss/banner/_banner.scss */
-.header .color-menu {
-  background-color: #232323;
-}
-/* line 78, ../scss/banner/_banner.scss */
-.header .list-menu {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-/* line 84, ../scss/banner/_banner.scss */
-.header .list-menu .content-list {
-  border-bottom: 1px solid #fff;
-}
-/* line 88, ../scss/banner/_banner.scss */
-.header .list-menu .content-list:last-child {
-  border-bottom: none;
-}
-/* line 95, ../scss/banner/_banner.scss */
 .header .link-menu {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   padding-top: 20px;
   padding-bottom: 20px;
   display: block;
+}
+/* line 22, ../scss/banner/_banner.scss */
+.header .navbar {
+  margin-bottom: 0;
+}
+/* line 27, ../scss/banner/_banner.scss */
+.header .navbar-default {
+  background-color: #333;
+  border: none;
+}
+/* line 33, ../scss/banner/_banner.scss */
+.header .navbar-brand {
+  padding: 20px 15px;
+  color: #fff;
+}
+/* line 39, ../scss/banner/_banner.scss */
+.header .navbar-default .navbar-nav > li > a {
+  color: #fff;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  transition: .3s;
+}
+/* line 46, ../scss/banner/_banner.scss */
+.header .navbar-default .navbar-nav > li > a:hover {
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}
+@media (max-width: 767px) {
+  /* line 39, ../scss/banner/_banner.scss */
+  .header .navbar-default .navbar-nav > li > a {
+    border: none;
+    transition: .3s;
+  }
+  /* line 57, ../scss/banner/_banner.scss */
+  .header .navbar-default .navbar-nav > li > a:hover {
+    background-color: #fff;
+    color: #333;
+    border: none;
+  }
+}
+/* line 66, ../scss/banner/_banner.scss */
+.header .nav li {
+  text-align: center;
+}
+/* line 71, ../scss/banner/_banner.scss */
+.header .slick-banner {
+  margin-top: 65px;
+}
+@media (max-width: 767px) {
+  /* line 76, ../scss/banner/_banner.scss */
+  .header .container > .navbar-header, .header .container-fluid > .navbar-header, .header .container > .navbar-collapse, .header .container-fluid > .navbar-collapse {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+}
+/* line 85, ../scss/banner/_banner.scss */
+.header .navbar-default .navbar-toggle {
+  border: none;
+}
+/* line 90, ../scss/banner/_banner.scss */
+.header .navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+/* line 95, ../scss/banner/_banner.scss */
+.header .navbar-default .navbar-toggle:hover, .header .navbar-default .navbar-toggle:focus {
+  background-color: transparent;
 }
 
 /* line 1, ../scss/coneca/_conheca.scss */

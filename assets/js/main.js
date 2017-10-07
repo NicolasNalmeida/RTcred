@@ -46,10 +46,33 @@ $('.slick-parceiros').slick({
 	]
 });
 
+$(document).ready(function()
+{
+	scroll();
+});
+
+$(window).on('scroll', function(){
+	scroll();
+});
+
+function close_toggle() {
+	if ($(window).width() < 768) {
+		$('.nav a').on('click', function(){
+	    	$(".navbar-toggle").click();
+		});
+	}
+	else {
+		$('.nav a').off('click');
+	}
+}
+close_toggle();
+
+$(window).resize(close_toggle);
+
 var $doc = $('html, body');
 $('.link-menu').click(function() {
 	$doc.animate({
-		scrollTop: $( $.attr(this, 'href') ).offset().top
+		scrollTop: $( $.attr(this, 'href') ).offset().top - 70
 	}, 600);
 	return false;
 });
